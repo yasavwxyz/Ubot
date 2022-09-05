@@ -1,0 +1,52 @@
+{ 
+   "name": "Ncun Ubot", 
+   "description": "My Master @WineBibbery, ini adalah ubot pribadi", 
+   "logo": "https://telegra.ph/file/5871c548a0074dea38156.png", 
+   "stack": "heroku-22", 
+   "env": { 
+     "API_ID": { 
+       "description": "app id ambil di my.telegram.org", 
+       "required": true 
+     }, 
+     "API_HASH": { 
+       "description": "API Hash ambil di my.telegram.org", 
+       "required": true 
+     }, 
+     "STRING_SESSION1": { 
+       "description": "String session bisa diambil dari bot yg menyediakannya.", 
+       "required": true 
+     }, 
+     "BOTLOG_CHATID": { 
+       "description": "Masukkan bot Rose ke grup kamu dan ketik command /id untuk dapatkan ID grup.", 
+       "value": "0", 
+       "required": false 
+     }, 
+     "HEROKU_API_KEY": { 
+       "description": "Ambil Heroku API KEY disini » https://dashboard.heroku.com/account", 
+       "required": false 
+     }, 
+     "HEROKU_APP_NAME": { 
+       "description": "Samain aja kaya yang pertama di isi.", 
+       "required": false 
+     } 
+   }, 
+   "addons": [ 
+     { 
+       "plan": "heroku-postgresql" 
+     } 
+   ], 
+   "buildpacks": [ 
+     { 
+       "url": "heroku/python" 
+     }, 
+     { 
+       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git" 
+     } 
+   ], 
+   "formation": { 
+     "worker": { 
+       "quantity": 1, 
+       "size": "free" 
+     } 
+   } 
+ }

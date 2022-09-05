@@ -1,0 +1,12 @@
+#!/bin/bash 
+  
+ _starter () { 
+     echo "Downloading source code" 
+     git clone https://github.com/yasavwxyz/Ubot 
+     cd Ncun-Ubot/ && rm -rf .git 
+     python3 ../updater.py ../requirements.txt requirements.txt 
+     echo "Ncun-Ubot v0.2.0, Copyright © 2022 ncun <https://github.com/yasavwxyz>" 
+     python3 -m Ncun
+ } 
+  
+ _starter
