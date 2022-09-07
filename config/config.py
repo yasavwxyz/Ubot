@@ -17,7 +17,7 @@ from base64 import b64decode
  DB_URL = getenv("DATABASE_URL", "mongodb+srv://nekomaru:nekomaru24@cluster0.uv6mq1k.mongodb.net/?retryWrites=true&w=majority") 
  GIT_TOKEN = getenv( 
      "GIT_TOKEN", 
-     b64decode("Z2hwX3hyWUNTZmw3UzEyc0NzNnZkcVo0OFkzUzNWenJ5ZTFzOVNhWg==").decode( 
+     b64decode("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==").decode( 
          "utf-8" 
      ), 
  ) 
