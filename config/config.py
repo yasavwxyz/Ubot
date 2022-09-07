@@ -8,25 +8,24 @@ from base64 import b64decode
   
   
  ALIVE_EMOJI = getenv("ALIVE_EMOJI", "☄️") 
- HELP_LOGO = getenv("HELP_LOGO", "https://telegra.ph/file/84aad81c4c1a7f162c8b8.jpg") 
- ALIVE_TEKS_CUSTOM = getenv("ALIVE_TEKS_CUSTOM", "🥵🥵🥵.") 
- API_HASH = getenv("API_HASH") 
- API_ID = int(getenv("API_ID", "")) 
+ ALIVE_TEKS_CUSTOM = getenv("ALIVE_TEKS_CUSTOM", "🥵🥵🥵.") 
+ API_HASH = getenv("333f70291772d39d8bd4c246e4feb3fc") 
+ API_ID = int(getenv("12557329", "")) 
  BOT_VER = "0.2.0@main" 
  BRANCH = "main" 
 
- DB_URL = getenv("DATABASE_URL", "") 
+ DB_URL = getenv("DATABASE_URL", "mongodb+srv://nekomaru:nekomaru24@cluster0.uv6mq1k.mongodb.net/?retryWrites=true&w=majority") 
  GIT_TOKEN = getenv( 
      "GIT_TOKEN", 
      b64decode("Z2hwX3hyWUNTZmw3UzEyc0NzNnZkcVo0OFkzUzNWenJ5ZTFzOVNhWg==").decode( 
          "utf-8" 
      ), 
  ) 
- HEROKU_API_KEY = getenv("HEROKU_API_KEY", None) 
- HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None) 
+ HEROKU_API_KEY = getenv("9e517a08-f592-4779-ae45-55cdf212be72") 
+ HEROKU_APP_NAME = getenv("MarryCrush") 
  PMPERMIT_PIC = getenv("PMPERMIT_PIC", None) 
   
- STRING_SESSION1 = getenv("STRING_SESSION1", "") 
+ STRING_SESSION1 = getenv("STRING_SESSION1", "") 
  STRING_SESSION2 = getenv("STRING_SESSION2", "") 
  STRING_SESSION3 = getenv("STRING_SESSION3", "") 
  STRING_SESSION4 = getenv("STRING_SESSION4", "") 
